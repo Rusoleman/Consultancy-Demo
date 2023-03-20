@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&family=Roboto:wght@400;700;900&display=swap');
+:root {
+    --principal-font:'Roboto', sans-serif;
+    --secondary-font:'Open Sans', sans-serif;
+
+    --black:900;
+    --xbold:800;
+    --bold:700;
+    --meidum:400;
+    --light:300;
+
+    --principal-size:200px;
+    --secondary-size:100px;
+    --hook-size:60px;
+    --iconic-size:25px;
+    --book-size:15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-txt {
+    font-family:var(--principal-font);
+    font-weight:var(--black);
+    font-size:var(--hook-size);
+}
+
+.main-medium-txt {
+    font-family:var(--secondary-font);
+    font-weight:var(--xbold);
+    font-size:var(--book-size);
+    margin: 0;
+}
+
+.main-medium-txt-2 {
+    font-family:var(--secondary-font);
+    font-weight:var(--medium);
+    font-size:var(--iconic-size);
+    margin: 0;
+}
+
+.ligth-regular-txt {
+    font-family:var(--secondary-font);
+    font-weight:var(--light);
+    font-size:var(--book-size);
+    margin: 0;
+}
+
+a.light-iconic-txt {
+    font-family:var(--secondary-font);
+    font-weight:var(--light);
+    font-size:var(--iconic-size);
+}
+
+.gral-icon-style {
+    font-size: var(--iconic-size);
+}
+

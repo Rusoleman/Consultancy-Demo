@@ -1,0 +1,91 @@
+:root{
+    --bg-btn-s1:#0AE6A5;
+    --bg-card:#E4E9E9;
+    --blue-1:#0CACDF;
+    --navy-shadow: rgba(2,12,27,0.7);
+}
+
+.hook-text-container {
+    width: 100%;
+    height: auto;
+}
+
+.button-s1 {
+    background:var(--bg-btn-s1);
+    height: 45px;
+    width: 25%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-list {
+    display:flex;
+    flex-direction:column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin:0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.social-list::before {
+    content: "";
+    display: block;
+    width: 1.5px;
+    height: 90px;
+    margin: 0 auto;
+    background:black;
+}
+
+.hook-section-container {
+    margin-top: 25%;
+}
+
+.icon-button {
+    border:none;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-element {
+    position:absolute;
+    margin-top: 700px;
+}
+
+.artboard-carousel{
+    height: 600px;
+    width: 100%;
+}
+
+.card-container {
+    width: 100%;
+    height: 100%;
+}
+
+.order-card {
+    border-radius:12px;
+    width: 55%;
+    height:10%;
+    background:var(--bg-card);
+    display: flex;
+    box-shadow: 0 15px 20px -15px var(--navy-shadow);
+}
+
+.float-icon-container {
+    position:absolute;
+}
+
+.text-card-alignment {
+    padding-top:3%;
+    padding-left: 10%;
+}
+
+.icon-alignment-1 {
+    padding-top:8%;
+    padding-left: 25%;
+}
+
