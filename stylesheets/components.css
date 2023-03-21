@@ -1,7 +1,8 @@
 :root{
     --bg-btn-s1:#0AE6A5;
-    --bg-card:#E4E9E9;
+    --gray-1:#E4E9E9;
     --blue-1:#0CACDF;
+    --crystal-1:rgba(217, 217, 217, .2);
     --navy-shadow: rgba(2,12,27,0.7);
 }
 
@@ -70,7 +71,7 @@
     border-radius:12px;
     width: 55%;
     height:10%;
-    background:var(--bg-card);
+    background:var(--gray-1);
     display: flex;
     box-shadow: 0 15px 20px -15px var(--navy-shadow);
 }
@@ -79,13 +80,100 @@
     position:absolute;
 }
 
-.text-card-alignment {
-    padding-top:3%;
-    padding-left: 10%;
+.container-img {
+    background: gray;
+    height:45%;
+    width: 70%;
+    display: flex;
 }
 
-.icon-alignment-1 {
-    padding-top:8%;
-    padding-left: 25%;
+.container-info{
+   display: flex;
 }
 
+.container-techframe {
+    height: 70px;
+    width: 70px;
+    margin-bottom:5%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.container-ops {
+    display: flex;
+    width: 100%;  
+}
+
+.workoffer-op {
+    display: block;
+    width: 20%;
+    margin:0;
+}
+
+.ops-list {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container-orderbtn {
+    width: 50%;
+}
+
+.base-btn {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.order-btn-style {
+    background: var(--gray-1);
+    border-radius: 12px;
+    width: 40%;
+    height: 25px;
+}
+
+.exp-block {
+    margin-right: 25%;
+}
+
+.stack-col {
+    width: 60%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    background: var(--crystal-1);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.stack-list { 
+    padding-left: 3%;
+}
+
+.container-carousel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-project {
+    background:var(--crystal-1);
+    height: 60%;
+    width: 65%;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.container-icon-btn {
+    display: flex;
+    justify-content: right;
+    align-items: baseline;
+    margin-right:3%;
+    z-index: 2;
+    position: relative;
+    margin-top: 130%;
+}

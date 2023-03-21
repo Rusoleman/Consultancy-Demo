@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&family=Roboto:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;800&family=Roboto:wght@400;700;900&display=swap');
 :root {
     --principal-font:'Roboto', sans-serif;
     --secondary-font:'Open Sans', sans-serif;
+    --link-font:'Lato', sans-serif;
 
     --black:900;
     --xbold:800;
@@ -16,14 +17,18 @@
     --book-size:15px;
 }
 
-a {
-    text-decoration: none;
-}
 
 .main-txt {
     font-family:var(--principal-font);
     font-weight:var(--black);
     font-size:var(--hook-size);
+}
+
+.techname-txt {
+    font-family:var(--principal-font);
+    font-weight:var(--black);
+    font-size:var(--hook-size);
+    margin: 0;
 }
 
 .main-medium-txt {
@@ -40,11 +45,24 @@ a {
     margin: 0;
 }
 
+.main-medium-txt-3 {
+    font-family:var(--principal-font);
+    font-weight:var(--bold);
+    font-size:var(--iconic-size);
+    margin: 0;
+}
+
 .ligth-regular-txt {
     font-family:var(--secondary-font);
     font-weight:var(--light);
     font-size:var(--book-size);
     margin: 0;
+}
+
+.ligth-regular-txt-2 {
+    font-family:var(--link-font);
+    font-weight:var(--bold);
+    font-size:var(--book-size);
 }
 
 a.light-iconic-txt {
@@ -57,3 +75,11 @@ a.light-iconic-txt {
     font-size: var(--iconic-size);
 }
 
+.regular-link-txt {
+    font-family:var(--link-font);
+    font-weight:var(--bold);
+    font-size:var(--book-size);
+    margin: 0;
+    text-decoration: underline;
+    text-align: center;
+}
