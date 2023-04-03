@@ -15,8 +15,11 @@
     <title>Index</title>
 </head>
 <body>
-    <main class="row">
-        <div class="col-lg-1">
+    <header class="col-lg-1 col-sm-4 sm-adj-menu-icon-pos hidden-lg">
+        <i class="ri-menu-4-fill sm-gral-icon sm-icon-space"></i>
+    </header>
+    <main class="row lg-wave-bg">
+        <div class="col-lg-1 hidden-sm">
             <ul class="social-list">
                 <br>
                 <li class="gral-icon-style">
@@ -30,9 +33,11 @@
                     </a>
                 </li>
                 <li class="gral-icon-style">
-                    <a href="" aria-label="Dribble" target="_blank">
+                    <!--Elemento temporal FASE 4-->
+                    <button onclick="counter()" href="#" aria-label="Dribble" target="_blank">
                         <i class="ri-dribbble-fill"></i>
-                    </a>
+                        <h2 id="tag">0</h2>
+                    </button>
                 </li>
                 <li class="gral-icon-style">
                     <a href="" aria-label="Instagram" target="_blank">
@@ -41,39 +46,38 @@
                 </li>
                 <li class="bottom-element">
                     <button class="icon-button">
-                        <i class="ri-share-fill gral-icon-style"></i>
+                        <i class="ri-share-fill gral-icon-style-2"></i>
                     </button>
                 </li>
             </ul>
         </div>
-        <div class="col-lg-7">
+        <div class="col-lg-7 col-sm-4">
             <div class="hook-section-container">    
-                <div class="hook-text-container">
-                    <strong class="main-txt" style="padding-left:10%">
+                <div class="hook-text-container sm-hook-text-container">
+                    <strong class="main-txt sm-main-txt">
                         If you can dream it
                     </strong>
-                    <br/>
-                    <strong class="main-txt" style="padding-left:45%">
-                        I can build it
+                    <br class="hidden-sm"/>
+                    <strong class="main-txt adj-txt-1 sm-main-txt">
+                        I'll make it REAL
                     </strong>
                 </div>
-                <div class="button-s1" style="margin-left:70%; margin-top:8%">
-                    <a href="" class="light-iconic-txt">Know more!</a>
+                <div class="button-s2-smv button-s1 base-btn">
+                    <a href="./views/services.html" class="light-iconic-txt">Know more!</a>
                 </div>
             </div>
         </div>
-        <section class="col-lg-4">
+        <section class="col-lg-4  hidden-sm">
             <!-- ⚠ In Crative Process -->
             <div class="artboard-carousel">
                 <!-- Carousel PoC -->
             </div>
-            
             <div class="order-card">
                 <div class="float-icon-container">
                     <svg width="35" height="35" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_15_87)">
                             <path d="M50 46.6675L51 48C51.1393 48.1857 51.2241 48.4065 51.2449 48.6377C51.2658 48.8689 51.2219 49.1014 51.118 49.309C51.0142 49.5166 50.8546 49.6913 50.6572 49.8133C50.4597 49.9354 50.2321 50 50 50H10C9.76786 50 9.54031 49.9354 9.34284 49.8133C9.14537 49.6913 8.98578 49.5166 8.88197 49.309C8.77815 49.1014 8.7342 48.8689 8.75505 48.6377C8.7759 48.4065 8.86072 48.1857 9 48L10 46.6675V25C10 19.6957 12.1071 14.6086 15.8579 10.8579C19.6086 7.10714 24.6957 5 30 5C35.3043 5 40.3914 7.10714 44.1421 10.8579C47.8929 14.6086 50 19.6957 50 25V46.6675ZM23.75 52.5H36.25C36.25 54.1576 35.5915 55.7473 34.4194 56.9194C33.2473 58.0915 31.6576 58.75 30 58.75C28.3424 58.75 26.7527 58.0915 25.5806 56.9194C24.4085 55.7473 23.75 54.1576 23.75 52.5Z" fill="black"/>
-                            <circle cx="44.5" cy="11.5" r="8.5" fill="#FFFFFF"/>
+                            <circle cx="44.5" cy="11.5" r="8.5" fill="#1D1F21"/>
                             <circle cx="44.5" cy="11.5" r="5.5" fill="#FF540B"/>
                         </g>
                         <defs>
@@ -88,11 +92,19 @@
                     <h6 class="main-medium-txt">Ready to order?</h6>
                     <p class="ligth-regular-txt">Let's get in touch!</p>
                 </div>
-                <a class="icon-alignment-1" href="">
+                <a class="icon-alignment-1" href="./views/contact.html">
                     <i class="ri-send-plane-fill gral-icon-style"></i>
                 </a>
             </div>
-        </section>
+        </section>      
+        <div class="hidden-lg sm-wave-bg">
+            <div class="col-sm-2 ">
+                <div class="button-s3-smv base-btn sm-adjust-btn-pos">
+                    <a class="regular-link-txt-2" href="./views/contact.html">Let's Start!</a>
+                </div>
+            </div>
+        </div>
     </main>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>

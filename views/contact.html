@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="../stylesheets/core.css">
+    <link rel="stylesheet" href="../stylesheets/tipography.css">
+    <link rel="stylesheet" href="../stylesheets/grid.css">
+    <link rel="stylesheet" href="../stylesheets/components.css">
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <!-- Extern Style Elements -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Get in touch!</title>
+</head>
+<body class="sm-main-alingment">
+    <main class="row">
+        <header class="col-lg-1 col-sm-4 sm-adj-menu-icon-pos sm-custom-pos social-list-2" >
+            <i class="ri-menu-4-fill sm-gral-icon sm-custom-pos-2 gral-icon-style hidden-lg"></i>      
+            <i class="ri-menu-fill gral-icon-style hidden-sm" style="padding-top: 15%;"></i>
+        </header>
+        <div class="col-lg-4 col-sm-4 alingment-style-1 sm-aligment-style-1" style="z-index: 10;">
+            <div style="text-align: center;">
+                <h1 class="main-txt-4" >Get in Touch!</h1>
+            </div>
+            <form class="container">
+                <div class="form-aligment-1 sm-form-aligment-1">
+                        <div style="display: flex; align-items: center;">
+                            <label for="budget" class="main-medium-txt-5">Budget</label>
+                            <select name="currency" id="currency" style="margin:3%;" class="select-style-1 main-medium-txt-6">
+                                <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                                <option value="MXN">MXN</option>
+                            </select>
+                        </div> 
+                        <input type="text" id="budget" name="budget" placeholder="$">
+                </div>
+                <div class="form-aligment-1 sm-form-aligment-1"> 
+                        <div style="margin-right: 2%; display: flex;">   
+                            <label for="start-date" class="main-medium-txt-5 label-txt-1">
+                                Start Date
+                            </label>
+                            <label for="deadline" class="main-medium-txt-5" >
+                                Deadline
+                            </label>
+                        </div>
+                        <div style="display:flex;">
+                            <div class="element-pos-form-1">  
+                                <div class="container-input-1 ">
+                                    <i class="ri-calendar-fill icon-alignment-2"></i>
+                                    <input class="input-style-1 input-sm-style-1" type="date" id="start-date" name="start-date">
+                                </div>
+                            </div>
+                            <div class="element-pos-form-1">  
+                                <div class="container-input-1">
+                                    <i class="ri-calendar-fill icon-alignment-2"></i>
+                                    <input class="input-style-1 input-sm-style-1" type="date" id="deadline" name="deadline">
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="form-aligment-1 sm-form-aligment-1">
+                        <label for="description" class="main-medium-txt-5" >Description</label>
+                        <textarea id="description" name="description" placeholder="I'd like ..." style="margin-top: 2%;"></textarea>
+                </div>
+                <div class="form-aligment-1 sm-form-aligment-1">
+                    <label for="contact" class="main-medium-txt-5">Contact</label>
+                    <ul style="display: flex; padding: 0;" class="base-btn">
+                        <li style="margin-right: 8%;">
+                            <div>
+                                <i class="ri-arrow-down-s-fill icon-alignment-3"></i>
+                                <i class="ri-google-fill gral-icon-style"></i>
+                            </div>
+                        </li>
+                        <li style="margin-right: 8%;">
+                            <i class="ri-user-3-fill gral-icon-style"></i>
+                        </li>
+                        <li>
+                            <i class="ri-global-line gral-icon-style"></i>
+                        </li>
+                    </ul>
+                </div>
+                <button type="submit" class="base-btn btn-s2 com-txt">
+                    Send!
+                    <i class="ri-send-plane-fill gral-icon-style-3"></i>
+                </button>
+            </form>
+            <!--<div class="sm-wave-bg-4"></div>-->
+        </div>
+        <div class="col-lg-7 hidden-sm" style="z-index: 10;" >
+            <div style="position:absolute; z-index: 3;">
+                <div style=" position:relative;left: 270px; top: -2px; margin: 0;">
+                    <h3 class="main-medium-txt-7" >Let's</h3>
+                </div>
+                <div style=" position:inherit;left: 391px; top: 70px; margin: 0;">
+                    <h3 class="main-medium-txt-7">build</h3>
+                </div>
+                <div style="position:inherit;left: 300px; top: 130px; margin: 0;">
+                    <h3 class="main-medium-txt-8">your</h3>
+                </div>
+                <div style="position:inherit;left: 360px; top: 190px; margin: 0;">
+                    <h3 class="main-medium-txt-8">project!</h3>
+                </div>
+                
+            </div>
+            <div class="alingment-style-1" style="display: flex;">
+                <img src="../SVG/phone-mock-1.svg" alt="">
+            </div>
+        </div>
+        <div class="col-lg-12 lg-wave-bg-4 "></div>
+        <div class="col-sm-4 sm-wave-bg-4 "></div>
+    </main>
+    
+</html>

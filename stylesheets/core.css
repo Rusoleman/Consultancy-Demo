@@ -1,3 +1,25 @@
+:root {
+    --polka-bg-image:
+      radial-gradient(rgb(217, 217, 217) 10.4%, transparent 10.4%);
+    --polka-bg-position: 8px 8px;
+    --polka-bg-size: 16px 16px;
+    --polka-bg-color: rgb(255, 255, 255);
+    --gray-3:rgba(217, 217, 217, 0.45);
+}  
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: var(--polka-bg-image);
+    background-position: var(--polka-bg-position);
+    background-size: var(--polka-bg-size);
+    overflow: hidden;
+}
+
+div.container-linkrepo{
+    overflow: hidden;
+}
+
 a {
     text-decoration: none;
 }
@@ -5,3 +27,131 @@ a {
 li {
     list-style-type: none;
 }
+
+select {
+    border: none;
+    background: none;
+    appearance: none;
+    background: url("data:image/svg+xml,<svg height='10px' width='10px' viewBox='0 0 16 16' fill='%23000000' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>") no-repeat;
+    background-position-y:12%;
+    background-position-x:2%;
+    width: 20%;
+    padding-left: 5%;
+    outline: none;
+}
+
+h1 {
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px; 
+    outline: none;
+    background: var(--gray-3);
+}
+input[type="date"] {
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 20px; 
+    outline: none;
+    background: var(--gray-3);
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: none;
+}
+
+img.img-sizing {
+    height: 90%; width: 90%;
+}
+
+em {
+    font-style: normal;
+}
+@media screen and (min-width: 992px) {
+    .lg-wave-bg{
+        position: absolute;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        background-size: 100%;
+        background-image: url(../SVG/lg-wave-index.svg);
+    }
+    .lg-wave-bg-2{
+        position: absolute;
+        top: 40%;
+        left: .01%;
+        background-repeat: no-repeat;
+        height: 100%;
+        background-size: 100%;
+        background-image: url(../SVG/lg-wave-services.svg);
+    }
+    .lg-wave-bg-3{
+        top: 20%;
+        position: absolute;
+        background-repeat: no-repeat;
+        height: 100%;
+        width: 100%;
+        background-size: 100%;
+        background-image: url(../SVG/lg-wave-detail.svg) ;
+    }
+    .lg-wave-bg-4{
+        position: absolute;
+        margin-top: 25%;
+        background-repeat: no-repeat;
+        height: 100%;
+        background-size: 100%;
+        background-image: url(../SVG/lg-wave-contact.svg) ;
+    }
+}
+
+@media screen and (min-width: 390px) { 
+    .sm-wave-bg {
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        padding: 0;       
+        background-image: url(../SVG/sm-wave-index.svg);
+    }
+    div.sm-wave-bg-2 {
+        top: 65%;
+        right: .01px;
+        position: absolute;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-image: url(../SVG/sm-wave-services.svg);
+    }
+    .sm-wave-bg-3{
+        top: 60%;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-image: url(../SVG/sm-wave-detail.svg);
+    }
+    .sm-wave-bg-4{
+        left: 30px;
+        position: absolute;
+        height: 100%;
+        background-image: url(../SVG/sm-wave-contact.svg); 
+        background-repeat: no-repeat;
+    }
+}
+
