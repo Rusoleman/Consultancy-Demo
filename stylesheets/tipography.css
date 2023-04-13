@@ -32,6 +32,7 @@
     font-family:var(--principal-font);
     font-weight:var(--bold);
     font-size:var(--hook-size);
+    animation: animation-txt 5s infinite;
 }
 
 .main-txt-3 {
